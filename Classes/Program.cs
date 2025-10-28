@@ -1,10 +1,26 @@
 ﻿namespace Classes
 {
+
+    public class Car
+    {
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public int Year { get; set; }
+    }
+    
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Car someCar = new Car();
+
+            someCar.Make = "Toyota";
+            someCar.Model = "Camry";
+            someCar.Year = 2000;
+            
+            Console.WriteLine(someCar.Make);
+            Console.WriteLine(someCar.Model);
+            Console.WriteLine(someCar.Year);
         }
     }
 }
